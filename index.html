@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phoebe Hong</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
   </head>
 
     <div class="jumbotron">
       <div class="container">
         <h1>Phoebe Hong</h1>
-        <p>Web Dev</p>
-        <p>
-          phoebejhhong@gmail.com
+        <p>Ruby on Rails / Javascript Web Developer |
+          <a href="mailto:phoebejhhong@gmail.com">phoebejhhong@gmail.com</a>
         </p>
       </div>
     </div>
@@ -21,22 +21,58 @@
     <div class="container">
       <h1>Projects</h1>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <h2>BigWander</h2>
-          <a href="http://bigwander.phoebehong.com/">
-          <img src="images/big-wander-screenshot.png" class="img-responsive" alt="" />
+          <a href="http://bigwander.com/" target="_blank">
+            <img src="images/big-wander-screenshot.png" class="img-responsive" alt="" />
           </a>
+          <p>Rails + Backbone
+          </p>
+          <ul>
+            <li>
+              Provides random Google street views and ability to save them in galleries.
+            </li>
+            <li>
+              RESTful JSON API to make AJAX requests to save and manage each street view.
+            </li>
+            <li>
+              Asynchronous requests sent to Google Maps Javascript API to automatically populate random coordinate data.
+            </li>
+          </ul>
+          <div class="btn-group">
+            <a class="btn btn-info" href="http://bigwander.com/" role="button" target="_blank" />Live &raquo;</a>
+            <a class="btn btn-default" href="http://github.com/phoebejhhong/big-wander/" role="button" target="_blank" />Github &raquo;</a>
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <h2>Asteroids</h2>
           <a href="http://phoebejhhong.github.io/asteroids/" target="_blank" />
             <img src="images/asteroids-screenshot.gif" class="img-responsive" alt="" />
           </a>
           <p>Javascript & HTML Canvas drawing</p>
-          <p><a class="btn btn-default" href="http://phoebejhhong.github.io/asteroids/" role="button" target="_blank" />Play &raquo;</a></p>
+          <div class="btn-group">
+            <a class="btn btn-info" href="http://phoebejhhong.github.io/asteroids/" role="button" target="_blank" />Play &raquo;</a>
+            <a class="btn btn-default" href="http://github.com/phoebejhhong/asteroids/" role="button" target="_blank" />Github &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Rails Lite</h2>
+          <a href="http://github.com/phoebejhhong/rails-lite/" target="_blank">
+            <img src="images/rails-lite-screenshot.png" alt="Rails Lite" />
+          </a>
+          <p>
+            Ruby
+          </p>
+          <ul>
+            <li>Simple Ruby web framework and object-relational mapper</li>
+            <li>Rails and Activerecord rebuilt with Ruby metaprogramming.</li>
+          </ul>
+          <div class="btn-group">
+            <a class="btn btn-default" href="http://github.com/phoebejhhong/rails-lite/" role="button" target="_blank" />Github &raquo;</a>
+          </div>
         </div>
         <div class="col-md-4">
           <h2>Snake</h2>
@@ -44,35 +80,45 @@
             <img src="images/snake-screenshot.gif" class="img-responsive" alt="" />
           </a>
           <p>Javascript & jQuery</p>
-          <p><a class="btn btn-default" href="http://phoebejhhong.github.io/snake/" role="button" target="_blank" />Play &raquo;</a></p>
+          <div class="btn-group">
+            <a class="btn btn-info" href="http://phoebejhhong.github.io/snake/" role="button" target="_blank" />Play &raquo;</a>
+            <a class="btn btn-default" href="http://github.com/phoebejhhong/snake/" role="button" target="_blank" />Github &raquo;</a>
+          </div>
         </div>
         <div class="col-md-4">
           <h2>TicTacToe</h2>
           <a href="http://phoebejhhong.github.io/tic-tac-toe/" target="_blank" />
             <img src="images/tic-tac-toe-screenshot.png" class="img-responsive" alt="" />
           </a>
-          <p>Just Javascript</p>
-          <p><a class="btn btn-default" href="http://phoebejhhong.github.io/tic-tac-toe/" role="button" target="_blank" />Play &raquo;</a></p>
+          <p>Plain ol' Javascript</p>
+          <div class="btn-group">
+            <a class="btn btn-info" href="http://phoebejhhong.github.io/tic-tac-toe/" role="button" target="_blank" />Play &raquo;</a>
+            <a class="btn btn-default" href="http://github.com/phoebejhhong/tic-tac-toe/" role="button" target="_blank" />Github &raquo;</a>
+          </div>
         </div>
       </div>
       <hr>
       <h1>Skills</h1>
-      <ul class="list-inline">
+      <ul class="list-inline skills">
+        <li>Ruby</li>
         <li>Ruby on Rails</li>
         <li>Javascript</li>
+        <li>jQuery</li>
+        <li>Backbone.js</li>
+        <li>PostgreSQL</li>
+        <li>MySQL</li>
+        <li>git</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>RSpec</li>
+        <li>TDD</li>
       </ul>
       <hr>
       <footer>
         <p>&copy; Phoebe Hong</p>
       </footer>
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
