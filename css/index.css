@@ -1,3 +1,50 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron {
+  background:
+  linear-gradient(
+    rgba(103, 58, 183, 0.45),
+    rgba(103, 58, 183, 0.45)
+    ),
+  url(../images/geometry.png);
+  text-align: center;
+}
+
+h1.name {
+  font-family: 'Arvo', 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title span {
+  font-size: 28px;
+  top: -5px;
+}
+
+.links li a{
+  color: #fff;
+  margin-right: 15px;
+}
+
+.introduction {
+  margin-top: 15px;
+  font-size: 42px;
+  font-weight: 200;
+}
 .skills li {
+  font-size: 18px;
+}
+
+.about-body {
   font-size: 18px;
 }
