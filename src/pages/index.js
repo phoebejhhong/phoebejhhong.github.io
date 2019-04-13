@@ -1,14 +1,40 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Post from "../components/post"
+
+const renderPost = ({ node }, i) => {
+  return <Post key={i} data={node} />;
+};
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`Phoebe Hong`]} />
-    <h1>Hey there,</h1>
-    <p>I code for web, mostly with React.</p>
-    <p>You can find me <a href="https://github.com/phoebejhhong" target="_blank" rel="noopener noreferrer">@phoebejhhong</a> on github.</p>
-  </Layout>
-)
+  <StaticQuery
+    query={postsQuery}
+    render={(data) => {
+      return (
+        <Layout>
+          <SEO title="Home" keywords={[`Phoebe Hong`]} />
+          {data.allMarkdownRemark.edges.map(renderPost)}
+        </Layout>
+      );
+    }}
+  />
+);
 
-export default IndexPage
+export default IndexPage;
+
+const postsQuery = graphql`{
+  allMarkdownRemark {
+    edges {
+      node {
+        frontmatter {
+          title
+          date
+        }
+        html
+      }
+    }
+  }
+}`;

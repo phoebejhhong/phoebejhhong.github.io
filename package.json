@@ -19,6 +19,7 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "gatsby-transformer-remark": "^2.3.8",
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.4"
   },
