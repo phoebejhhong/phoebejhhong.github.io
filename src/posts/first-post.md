@@ -1,5 +1,5 @@
 ---
-title: Hey there 👋
+title: Hey there,
 date: '2019-04-13'
 ---
 
