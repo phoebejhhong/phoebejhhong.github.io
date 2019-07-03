@@ -91,12 +91,11 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
-code,
 kbd,
-pre,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
+  margin-bottom: 1rem;
 }
 figure {
   margin: 1em 40px;
@@ -397,19 +396,6 @@ figure {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-pre {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 0.85rem;
-  line-height: 1.42;
-  background: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  overflow: auto;
-  word-wrap: normal;
-  padding: 1.45rem;
-}
 table {
   margin-left: 0;
   margin-right: 0;
@@ -540,10 +526,6 @@ p *:last-child {
 li > p {
   margin-bottom: calc(1.45rem / 2);
 }
-code {
-  font-size: 0.85rem;
-  line-height: 1.45rem;
-}
 kbd {
   font-size: 0.85rem;
   line-height: 1.45rem;
@@ -589,8 +571,7 @@ th:last-child,
 td:last-child {
   padding-right: 0;
 }
-tt,
-code {
+tt {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
@@ -599,19 +580,13 @@ code {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
-pre code {
-  background: none;
-  line-height: 1.42;
-}
-code:before,
-code:after,
+
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
   content: " ";
 }
-pre code:before,
-pre code:after,
+
 pre tt:before,
 pre tt:after {
   content: "";

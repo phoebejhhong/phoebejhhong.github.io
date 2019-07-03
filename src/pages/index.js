@@ -32,6 +32,8 @@ const postsQuery = graphql`{
         frontmatter {
           title
           date
+          slug
+          keywords
         }
         html
       }

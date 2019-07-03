@@ -16,6 +16,8 @@ export const postBySlugQuery = graphql`
       frontmatter {
         title
         date
+        slug
+        keywords
       }
     }
 }`
