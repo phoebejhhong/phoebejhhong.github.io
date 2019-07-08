@@ -5,10 +5,10 @@ import PropTypes from "prop-types"
 import SEO from "./seo";
 import postStyles from "./post.module.css";
 
-const Post = ({ data }) => {
+const Post = ({ data, onIndexPage }) => {
   return (
     <>
-      <SEO title={data.frontmatter.title} keywords={data.frontmatter.keywords ? data.frontmatter.keywords.split(" ") : []} />
+      {!onIndexPage && <SEO title={onIndexPage ? "Home" : data.frontmatter.title} keywords={data.frontmatter.keywords ? data.frontmatter.keywords.split(" ") : []} />}
       <div className={postStyles.titleWrapper}>
         <Link to={data.frontmatter.slug} className={postStyles.title}><h1>{data.frontmatter.title}</h1></Link>
         <span className={postStyles.date}>{data.frontmatter.date}</span>

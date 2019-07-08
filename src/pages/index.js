@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Post from "../components/post"
 
 const renderPost = ({ node }, i) => {
-  return <Post key={i} data={node} />;
+  return <Post key={i} data={node} onIndexPage={true} />;
 };
 
 const IndexPage = () => (
