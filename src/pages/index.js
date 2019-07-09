@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Post from "../components/post"
 
 const renderPost = ({ node }, i) => {
-  return <Post key={i} data={node} onIndexPage={true} />;
+  return <Post key={i} data={node} />;
 };
 
 const IndexPage = () => (
@@ -26,7 +26,9 @@ const IndexPage = () => (
 export default IndexPage;
 
 const postsQuery = graphql`{
-  allMarkdownRemark {
+  allMarkdownRemark(
+    sort: { fields: [frontmatter___date], order: DESC }
+  ) {
     edges {
       node {
         frontmatter {

@@ -2,9 +2,16 @@ import React from "react"
 import { graphql } from "gatsby"
 import Post from "../components/post";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const PostPage = ({ data }) => {
-  return <Layout><Post data={data.markdownRemark} /></Layout>
+  const postData = data.markdownRemark;
+  return (
+    <>
+    <SEO title={postData.frontmatter.title} keywords={postData.frontmatter.keywords ? postData.frontmatter.keywords.split(" ") : []} />
+    <Layout><Post data={postData} /></Layout>
+    </>
+  );
 };
 
 export default PostPage;

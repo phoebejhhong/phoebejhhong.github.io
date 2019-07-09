@@ -1,6 +1,6 @@
 ---
 title: A simple case for Do Repeat Yourself
-date: '2019-07'
+date: '2019-07-04'
 slug: 'do-repeat-yourself'
 keywords: 'development'
 ---
