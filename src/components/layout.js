@@ -38,6 +38,31 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
         </div>
+        <footer style={{
+          textAlign: `center`,
+          marginBottom: `2rem`,
+        }}>
+          <small>
+
+            built with{" "}
+            <a
+              href="https://www.gatsbyjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              gatsby
+            </a>
+            <span style={{ margin: `0 0.5rem` }}> | </span>
+            view{" "}
+            <a
+              href="https://github.com/phoebejhhong/phoebejhhong.github.io/tree/develop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              code
+            </a>
+          </small>
+        </footer>
       </>
     )}
   />
