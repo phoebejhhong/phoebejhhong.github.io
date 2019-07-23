@@ -22,6 +22,7 @@ const Header = ({ siteTitle }) => (
       backgroundColor: `white`,
       marginBottom: `1.45rem`,
       height: `15rem`,
+      borderBottom: `1px solid black`,
     }}
   >
     <div
