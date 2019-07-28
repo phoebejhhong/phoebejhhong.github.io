@@ -2,7 +2,7 @@
 title: A simple case for Do Repeat Yourself
 date: '2019-07-04'
 slug: 'do-repeat-yourself'
-keywords: 'development'
+keywords: 'software development'
 ---
 
  The other day, I wrote a piece of code that went like this:

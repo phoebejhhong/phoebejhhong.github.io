@@ -12,15 +12,13 @@ module.exports = {
         plugins: [
           { resolve: `gatsby-remark-prismjs` },
           { resolve: `gatsby-remark-external-links` },
+          { resolve: `gatsby-remark-images`, options: { maxWidth: 500 } },
+          { resolve: `gatsby-remark-copy-linked-files` },
         ],
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts`,

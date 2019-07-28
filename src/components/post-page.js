@@ -8,7 +8,7 @@ const PostPage = ({ data }) => {
   const postData = data.markdownRemark;
   return (
     <>
-    <SEO title={postData.frontmatter.title} keywords={postData.frontmatter.keywords ? postData.frontmatter.keywords.split(" ") : []} />
+    <SEO title={postData.frontmatter.title} keywords={postData.frontmatter.keywords ? postData.frontmatter.keywords.split(", ") : []} />
     <Layout><Post data={postData} /></Layout>
     </>
   );

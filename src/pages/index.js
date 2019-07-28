@@ -6,7 +6,12 @@ import SEO from "../components/seo"
 import Post from "../components/post"
 
 const renderPost = ({ node }, i) => {
-  return <Post key={i} data={node} />;
+  return (
+    <div key={i} style={{ marginBottom: "4rem" }}>
+      {i !== 0 && <hr />}
+      <Post data={node} />
+    </div>
+  );
 };
 
 const IndexPage = () => (
