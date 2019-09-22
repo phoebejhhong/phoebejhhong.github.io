@@ -5,7 +5,7 @@ slug: 'complexity-in-software-engineering'
 keywords: 'software development, software engineering, cognitive complexity, computational complexity'
 ---
 
-*A Philosophy of software design* by John Ousterhout was a beautiful read and I mean to write a more comprehensive review one day. Here is one quick note I want to make after finishing the book, which is about the word *complexity*. It is a word I hear in software engineering under two different contexts with two different meanings and I have yet to seen them discussed in parallel.
+*A Philosophy of software design* by John Ousterhout was a beautiful read and I mean to write a more comprehensive review one day. Here is one quick note I want to make after finishing the book, which is about the word *complexity*. It is a word I hear in software engineering under two different contexts with two different meanings and I have yet to see them discussed in parallel.
 
 First complexity, mostly talked about in analysis of algorithms, is **computational complexity**. This complexity is perceived by computers and indicates how efficient it is for them to run an algorithm. An algorithm with higher computational complexity requires more resources (time and space).
 
