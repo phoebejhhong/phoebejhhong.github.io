@@ -34,18 +34,18 @@ return <PanelComponent someProp={someProp} />
 
 ❌ Things the "refactor" didn't do:
 
-- It didn't make code less bug-prone
+- It didn't make the code less bug-prone
 
-Because the new code looks more organized, it might give you (false) sense of security. Still, any mistake you can make in the previous code, can be made in the latter code in the same manner.
-
-- It didn't make code easier to change
-
-It doesn't particularly reduce the amount of effort needed to do something as simple as adding `PanelD` or removing `PanelB`. In a case a future design change requires passing different props to different panels, however, you can imagine how much more configuration we have to add in the latter code, whereas in the former, to put it in a very technically accurate term, it'd be super easy.
+Because the new code looks more organized, it might give you (false) sense of security. Still, any mistake you can make in the previous code (i.e. omitting a panel type), can be made in the latter code in the same manner.
 
 ✅ Things the "refactor" did do:
 
-- It made code longer
-- It made code more complex
+- It made it harder to change the code
+
+It doesn't particularly reduce the amount of effort needed to do something as simple as adding `PanelD` or removing `PanelB`. In a case a future design change requires passing different props to different panels, however, you can imagine how much more configuration we have to add in the latter code, whereas in the former, to put it in a very technically accurate term, it'd be super easy.
+
+
+- It made the code longer and more complex
 
  More lines of code means more work. I had to use my brain extra hard to come up with pretty much meaningless variable names like `panelTypeComponentMap` and `PanelComponent`. Imagine the toll on the future readers of the code, learning more *stuff*, jumping around the code because most likely `panelTypeComponentMap` is defined on the top of the file or, even worse, in a different file.
 

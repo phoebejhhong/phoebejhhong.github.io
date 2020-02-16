@@ -26,4 +26,4 @@ This one requires little explanation - building something new is exciting, espec
 
 Sadly, some new features are extremely predictable. I can come up with a boring implementation plan soon enough, and all I got to do is to stick to it. This doesn't necessarily mean that the feature is small, so it can go on for weeks.
 
-(Note: When you end up in this situation what you should do is to pray that the next project will be fun. What you maybe tempted to do but shouldn't do is to find a way to make the task fun. A mature developer accepts that boring code must be written!)
+(Note: When you end up in this situation what you should do is to pray that the next project will be fun. What you may be tempted to do but shouldn't do is to find a way to make the task fun. A mature developer accepts that boring code must be written!)

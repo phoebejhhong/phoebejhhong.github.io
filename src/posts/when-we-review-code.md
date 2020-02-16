@@ -15,7 +15,7 @@ As software developers, code review is an important part of our job. Our coworke
 
 Yes, the reviewer might pick up critical mistakes that the author didn't see. Yes, authors who lack certain experience can always benefit from the eyes of the more knowledgeable.
 
-But hey, code review is definitely a two-way street and reviewers learn a ton too! Here I present a list of some of the things we learn when review code.
+But hey, code review is definitely a two-way street and reviewers learn a ton too! Here I present a list of some of the things we learn when we review code.
 
 ### 🗒 We learn more about the codebase
 
@@ -25,7 +25,7 @@ In the long term, we obtain broader view of the codebase. What are the prevalent
 
 ### 👩‍💻 We learn how to code better
 
-There are immediate wins when you go 'I didn't know you can do that! I will use it next time'. Then there are yet again broader benefits from being exposed to different approaches and having discussions about them. You can have discussions elsewhere too, but code review is a good place to start them. Review comments that lead to learning often look like this: 'XXX is used here but we can achieve the same with YYY. What do you think are the reasons why one would prefer one to another?'
+There are immediate wins when you go 'I didn't know you can do that! I will use it next time'. Then there are yet again broader benefits from being exposed to different approaches and having discussions about them. You can have discussions elsewhere too, but code review is a good place to start them. Review comments that lead to learning often look like this: 'XXX is used here but we can achieve the same with YYY. What do you think are the reasons why we should prefer one to the other?'
 
 ### 📚 We learn how to read code better
 
