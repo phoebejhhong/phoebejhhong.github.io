@@ -61,6 +61,13 @@ const Layout = ({ children }) => (
             >
               code
             </a>
+            <span style={{ margin: `0 0.5rem` }}> | </span>
+            reach out @
+            <a
+              href="mailto:phoebejhhong@gmail.com"
+            >
+              <span role="img" aria-label="mail"> 💌</span>
+            </a>
           </small>
         </footer>
       </>
